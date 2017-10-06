@@ -11,4 +11,4 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
 # Install vue-cli
 RUN npm install -g vue-cli
 
-CMD ["mkdir -p", "/home/project"]
+RUN mkdir -p /home/project
