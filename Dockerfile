@@ -1,4 +1,4 @@
-FROM ubuntu-upstart:latest
+FROM debian:9.2
 
 RUN apt-get update  && apt-get install -y curl git
 
@@ -11,6 +11,7 @@ RUN curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
 # Install vue-cli
 RUN npm install -g vue-cli
 
-RUN mkdir -p /home/project
+# Install react
+RUN npm install -g create-react-app
 
-EXPOSE 3000
+RUN mkdir -p /home/project
