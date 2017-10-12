@@ -1,4 +1,4 @@
-FROM debian:9.2
+FROM ubuntu-upstart:latest
 
 # Install dependencies
 RUN apt-get update \
