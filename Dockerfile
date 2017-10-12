@@ -16,5 +16,3 @@ RUN npm install -g vue-cli
 RUN npm install -g create-react-app
 
 RUN mkdir -p /home/project
-
-EXPOSE 3000
