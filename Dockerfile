@@ -15,4 +15,9 @@ RUN npm install -g vue-cli
 # Install react
 RUN npm install -g create-react-app
 
-RUN mkdir -p /home/project
+RUN mkdir -p /home/projects
+
+# Other settings
+VOLUME /home/projects
+
+WORKDIR /home/projects
